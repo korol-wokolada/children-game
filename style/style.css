@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 1.4rem;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: black;
+  background-color: rgb(220, 227, 233);
+}
+header {
+  padding: 10px;
+  background-color: rgb(195, 47, 64);
+
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style-type: none;
+}
+h1 {
+  font-size: 5vw;
+  color: white;
+}
+h3 {
+  font-size: 5vw;
+}
+.nav {
+  display: flex;
+  padding-top: 10px;
+  gap: 20px;
+  font-size: 3vw;
+}
+.current::after {
+  content: "_";
+  display: block;
+  font-size: 4px;
+  background-color: white;
+}
+.wrapper {
+  font-size: 80px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  margin-right: 10px;
+}
+
+.container-equation {
+  font-size: 12vw;
+  background-color: white;
+  border-radius: 3px;
+  text-align: center;
+
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.equation-elements {
+  margin: auto auto;
+}
+.container-answer {
+  margin-top: 10px;
+  font-size: 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.answer-elements {
+  width: auto;
+  border-radius: 3px;
+  text-align: center;
+  margin-left: 10px;
+}
+#option1 {
+  background-color: rgb(232, 76, 76);
+  color: white;
+  transition: 1s;
+}
+#option1:hover {
+  background-color: white;
+  color: rgb(232, 76, 76);
+}
+#option2 {
+  background-color: rgb(76, 151, 232);
+  color: white;
+  transition: 1s;
+}
+#option2:hover {
+  background-color: white;
+  color: rgb(76, 151, 232);
+}
+#option3 {
+  background-color: rgb(50, 173, 73);
+  color: white;
+  transition: 1s;
+}
+#option3:hover {
+  background-color: white;
+  color: rgb(50, 173, 73);
+}
+.select-inreval {
+  background-color: white;
+  width: 50%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 10px;
+  font-size: 50px;
+  text-align: center;
+}
+.select-inreval-form {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+
+  justify-content: center;
+}
+form input {
+  font-size: 3vw;
+  width: 80%;
+  padding: 5px;
+  border-radius: 10px;
+  border: 4px solid rgb(195, 47, 64);
+}
+.set-integer {
+  background-color: rgb(195, 47, 64);
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0px 0px 5px red;
+}
+
+@media (max-width: 720px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  .answer-elements {
+    padding: 20px 0;
+  }
+  .select-inreval {
+    width: 95%;
+  }
+}
+@media (max-width: 360px) {
+  .select-inreval {
+    width: 90%;
+  }
+}
