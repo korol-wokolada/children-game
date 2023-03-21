@@ -83,28 +83,19 @@ h3 {
   color: white;
   transition: 1s;
 }
-#option1:hover {
-  background-color: white;
-  color: rgb(232, 76, 76);
-}
+
 #option2 {
   background-color: rgb(76, 151, 232);
   color: white;
   transition: 1s;
 }
-#option2:hover {
-  background-color: white;
-  color: rgb(76, 151, 232);
-}
+
 #option3 {
   background-color: rgb(50, 173, 73);
   color: white;
   transition: 1s;
 }
-#option3:hover {
-  background-color: white;
-  color: rgb(50, 173, 73);
-}
+
 .select-inreval {
   background-color: white;
   width: 50%;
